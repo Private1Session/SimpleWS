@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stickman</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../default-style.css">
+
+	<style type="text/css">
+		html {
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+
+			overflow: hidden;
+		}
+		body {
+			background-color: black;
+		}
+
+		canvas {
+			margin: auto;
+			display: block;
+			outline: 1px solid black;
+			-webkit-tap-highlight-color:rgba(0,0,0,0);
+		}
+	</style>
+
+	<script src="../../library/p5.min.js"></script>	
+	<!--<script src="/library/p5.sound.min.js"></script>-->
+	<script src="init.js"></script>
+</head>
+<body>
+	<header>
+		<ul class="navigator">
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../games.html">Games</a></li>
+		</ul>
+	</header>
+
+
+	<script src="modules/stats.js"></script>
+	<script src="modules/lerp2.js"></script>
+	<script src="modules/camera.js"></script>
+	<script src="modules/particles.js"></script>
+	<script src="modules/animation.js"></script>
+	<script src="modules/interface.js"></script>
+	<script src="modules/custom-gui.js"></script>
+	
+	<script src="trench.js"></script>
+	<script src="entity.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
