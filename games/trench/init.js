@@ -28,6 +28,12 @@ let onGameLoadedCallbacks = [];
 function onGameLoaded(callback) {
 	onGameLoadedCallbacks.push(callback);
 }
+function onCanvasResize(){
+	skyboxHeight = Math.max(windowHeight - terrainHeight,0);
+	halfWindow = Math.floor(windowWidth/2);
+
+	GAME_INTERFACE.windowResized();
+}
 
 function loadCanvas(){
 	windowWidth = Math.min(windowWidth, 900)
@@ -36,11 +42,13 @@ function loadCanvas(){
 	
 	const canvas = document.getElementById('defaultCanvas0');
 	canvas.removeAttribute('style');
+	/*
 	window.addEventListener('resize',function(){
 		canvas.width = windowWidth;
 		canvas.height = windowHeight;		
 		onCanvasResize();
 	})
+	*/
 
 	onCanvasResize();
 
