@@ -29,13 +29,6 @@ function onGameLoaded(callback) {
 	onGameLoadedCallbacks.push(callback);
 }
 
-function onCanvasResize(){
-	skyboxHeight = Math.max(windowHeight - terrainHeight,0);
-	halfWindow = Math.floor(windowWidth/2);
-
-	GAME_INTERFACE.windowResized();
-}
-
 function loadCanvas(){
 	windowWidth = Math.min(windowWidth, 900)
 	windowHeight = Math.min(windowHeight, 600) 
