@@ -181,9 +181,20 @@ function preload(){
 
 			sprites: {
 				'moving': {
-					frameCooldown: 1,
+					frameCooldown: 2,
 					frames: [
 						loadImage('images/tank/move-1.png'),
+						loadImage('images/tank/move-2.png'),
+					],
+				},
+
+				'attack': {
+					frameCooldown: 1,
+					frames: [
+						loadImage('images/tank/attack-1.png'),
+						loadImage('images/tank/attack-2.png'),
+						loadImage('images/tank/attack-3.png'),
+						loadImage('images/tank/attack-1.png'),
 					],
 				},
 			}
